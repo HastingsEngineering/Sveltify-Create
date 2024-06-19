@@ -1,5 +1,5 @@
 export default {
-    stackbitVersion: '~0.5.0',
+    stackbitVersion: '~0.6.0',
     nodeVersion: "18",
     ssgName: 'custom',
     devCommand: 'npm run dev',
