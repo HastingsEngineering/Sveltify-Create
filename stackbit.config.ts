@@ -26,7 +26,7 @@ export default defineStackbitConfig({
                     type: "page",
                     urlPath: "/{slug}",
                     filePath: "src\\content\\pages\\{slug}.json",
-                    extends: "Blocks",
+                    hideContent: true,
                     fieldGroups: [
                         {
                             name: "meta",
@@ -35,6 +35,12 @@ export default defineStackbitConfig({
                         }
                     ],
                     fields: [
+                        {
+                            name: "slug",
+                            type: "slug",
+                            required: true,
+                            group: "meta"
+                        },
                         {
                             name: "title",
                             type: "string",
@@ -48,32 +54,36 @@ export default defineStackbitConfig({
                             group: "meta"
                         },
                         {
-                            name: "featuredImage",
-                            type: "image",
-                            required: true,
-                            group: "meta"
+                            name: "blocks",
+                            type: "model",
+                            models: [],
+                            groups: ["Block"]
                         }
                     ]
                 },
                 {
-                    name: "Blocks",
-                    description: "Configurable content blocks",
+                    name: "Test",
                     type: "object",
+                    groups: ["Block"],
                     fields: [
                         {
                             name: "TestField",
                             type: "string",
-                            required: true,
-                            group: "meta"
+                            required: true
                         }
-                    ],
-                    fieldGroups: [
+                    ]
+                },
+                {
+                    name: "Test2",
+                    type: "object",
+                    groups: ["Block"],
+                    fields: [
                         {
-                            name: "meta",
-                            label: "Metadata",
-                            icon: "circle-info"
+                            name: "TestField2",
+                            type: "string",
+                            required: true
                         }
-                    ],
+                    ]
                 },
             ],
             assetsConfig: {
