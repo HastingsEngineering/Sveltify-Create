@@ -1,8 +1,10 @@
 <script>
+	import LayoutBlocks from "$lib/layout/LayoutBlocks.svelte";
     export let data;
-    let { PageContent, path } = data;
+
+    let { path } = data;
 </script>
 
-<div data-sb-object-id={path}>
-    <h1 data-sb-field-path="title">{PageContent.title}</h1>
-</div>
+<main data-sb-object-id={path}>
+    <LayoutBlocks {data}/>
+</main>

@@ -55,36 +55,46 @@ export default defineStackbitConfig({
                         },
                         {
                             name: "blocks",
-                            type: "model",
-                            models: [],
-                            groups: ["Block"]
+                            type: "list",
+                            items: {
+                                type: "model",
+                                models: [],
+                                groups: ["Block"]
+                            }
                         }
                     ]
                 },
                 {
-                    name: "Test",
+                    name: "HeaderSimpleWithEyebrow",
                     type: "object",
                     groups: ["Block"],
                     fields: [
                         {
-                            name: "TestField",
+                            name: "Heading",
                             type: "string",
+                            default: "Heading",
                             required: true
-                        }
-                    ]
-                },
-                {
-                    name: "Test2",
-                    type: "object",
-                    groups: ["Block"],
-                    fields: [
+                        },
                         {
-                            name: "TestField2",
+                            name: "EyebrowText",
                             type: "string",
+                            default: "Eyebrow Text",
                             required: true
-                        }
+                        },
+                        {
+                            name: "Body",
+                            type: "string",
+                            default: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+                            required: true
+                        },
+                        {
+                            name: "ref",
+                            type: "string",
+                            const: "header-simple-with-eyebrow",
+                            hidden: true
+                        },
                     ]
-                },
+                }
             ],
             assetsConfig: {
                 referenceType: "static",

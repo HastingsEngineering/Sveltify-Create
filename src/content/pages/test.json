@@ -2,5 +2,14 @@
     "type": "Page",
     "title": "Test Title",
     "slug": "test",
-    "description": "Test"
+    "description": "Test",
+    "blocks": [
+        {
+            "type": "HeaderSimpleWithEyebrow",
+            "Heading": "Big Heading",
+            "EyebrowText": "Eyebrow Tasdfa",
+            "Body": "Anim aute id magna aliqua ad ad non deserunt sunt.",
+            "ref": "header-simple-with-eyebrow"
+        }
+    ]
 }
