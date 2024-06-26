@@ -10,7 +10,7 @@ export default defineStackbitConfig({
         ssg: {
             name: 'sveltekit',
             logPatterns: {
-            up: [' ready in '],
+                up: [' ready in '],
             },
             passthrough: ['/vite-hmr/**'],
         },
