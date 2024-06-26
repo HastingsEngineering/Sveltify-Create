@@ -4,7 +4,7 @@ export default {
     stackbitVersion: '~0.6.0',
     nodeVersion: '18',
     ssgName: 'custom',
-    devCommand: 'npm run dev',
+    devCommand: './node_modules/.bin/vite --port {PORT}',
     experimental: {
         ssg: {
             name: 'sveltekit',
