@@ -46,7 +46,7 @@
   "type": "module",
   "dependencies": {
     "@floating-ui/dom": "1.6.5",
-    "@stackbit/cms-git": "^1.0.2",
+    "@stackbit/cms-git": "^1.0.3",
     "@stackbit/types": "^2.0.2",
     "highlight.js": "11.9.0"
   }
