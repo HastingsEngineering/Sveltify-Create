@@ -24,7 +24,7 @@ export default {
                     description: "Pages on the website",
                     type: "page",
                     urlPath: "/{slug}",
-                    filePath: "src\\content\\pages\\{slug}.json",
+                    filePath: "src/content/pages/{slug}.json",
                     hideContent: true,
                     fieldGroups: [
                         {

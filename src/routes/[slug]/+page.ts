@@ -16,7 +16,7 @@ export async function entries() {
 export async function load({params}) {
     try {
         const page = await import(`../../content/pages/${params.slug}.json`);
-        return { PageContent: page.default, path: `src\\content\\pages\\${params.slug}.json`}
+        return { PageContent: page.default, path: `src/content/pages/${params.slug}.json`}
     } catch(err) {
         throw error(404, "Not Found")
     }
