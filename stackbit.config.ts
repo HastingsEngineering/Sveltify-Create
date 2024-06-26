@@ -1,9 +1,8 @@
-import { defineStackbitConfig } from "@stackbit/types";
 import { GitContentSource } from "@stackbit/cms-git";
 
-export default defineStackbitConfig({
+export default {
     stackbitVersion: '~0.6.0',
-    nodeVersion: '20',
+    nodeVersion: '18',
     ssgName: 'custom',
     devCommand: 'npm run dev',
     experimental: {
@@ -105,4 +104,4 @@ export default defineStackbitConfig({
             }
         })
     ]
-}); 
+}; 
